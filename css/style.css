@@ -1,0 +1,22 @@
+.brand-logo {
+    font-family: 'poppins';
+    margin-left: 5%;
+}
+
+.favorite-icon {
+    color: #ff9642;
+}
+
+.preloader-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 15%;
+}
+
+.team-logo {
+    margin-top: 10px;
+}
+
+.title {
+    color: #ff9642;
+}
