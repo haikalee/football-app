@@ -48,14 +48,6 @@ workbox.routing.registerRoute(
     })
 )
 
-self.addEventListener('install', e => {
-    e.waitUntil(
-        caches.open(CACHE_NAME).then(cache => {
-            return cache.addAll(urlCache)
-        })
-    )
-})
-
 self.addEventListener('fetch', e => {
     const base_url = 'https://api.football-data.org/v2/';
 
