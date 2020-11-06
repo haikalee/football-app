@@ -39,7 +39,7 @@ if (workbox) {
     console.log('workbox gagal dimuat');
 }
 
-workbox.precaching.precacheAndRoute(urlCache);
+workbox.precaching.precacheAndRoute(urlCache, {ignoreUrlParametersMatching: [/.*/]});
 
 workbox.routing.registerRoute(
     new RegExp('/pages/'),
